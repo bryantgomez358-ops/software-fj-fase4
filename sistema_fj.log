@@ -1,0 +1,32 @@
+2026-11-19 09:57:26 | INFO | === INICIO DE SIMULACIÓN SOFTWARE FJ (13 OPERACIONES) ===
+2026-11-19 09:57:26 | INFO | [CLIENTE REGISTRADO] Cliente [C001] - Laura Gómez | Correo: laura.gomez@correo.com | Tel: 3104567890
+2026-11-19 09:57:26 | INFO | Intento de registro de cliente finalizado (ID=C001).
+2026-11-19 09:57:26 | INFO | [CLIENTE REGISTRADO] Cliente [C002] - Carlos Pérez | Correo: carlos.perez@empresa.co | Tel: 3209876543
+2026-11-19 09:57:26 | INFO | Intento de registro de cliente finalizado (ID=C002).
+2026-11-19 09:57:26 | ERROR | [CLIENTE FALLIDO] ID=C003 -> DatosInvalidosError: Correo electrónico inválido: 'andres.ruiz.correo.com'.
+2026-11-19 09:57:26 | INFO | Intento de registro de cliente finalizado (ID=C003).
+2026-11-19 09:57:26 | ERROR | [CLIENTE FALLIDO] ID=C004 -> ParametrosFaltantesError: El nombre del cliente es obligatorio.
+2026-11-19 09:57:26 | INFO | Intento de registro de cliente finalizado (ID=C004).
+2026-11-19 09:57:26 | INFO | [SERVICIO CREADO] Servicio [S001] - Sala Ejecutiva Norte ($80,000.00) | Disponible | Reserva de Sala 'Sala Ejecutiva Norte' para hasta 25 personas.
+2026-11-19 09:57:26 | INFO | Intento de creación de servicio finalizado (Código=S001).
+2026-11-19 09:57:26 | INFO | [SERVICIO CREADO] Servicio [S002] - Kit Portátiles Desarrollo ($35,000.00) | Disponible | Alquiler de Equipo 'Kit Portátiles Desarrollo' (Laptop Core i7), cantidad: 3.
+2026-11-19 09:57:26 | INFO | Intento de creación de servicio finalizado (Código=S002).
+2026-11-19 09:57:26 | INFO | [SERVICIO CREADO] Servicio [S003] - Arquitectura Cloud ($120,000.00) | No disponible | Asesoría Especializada en Nube AWS (PRESENCIAL) - Arquitectura Cloud.
+2026-11-19 09:57:26 | INFO | Intento de creación de servicio finalizado (Código=S003).
+2026-11-19 09:57:26 | ERROR | [SERVICIO FALLIDO] Código=S004 -> DatosInvalidosError: La tarifa base del servicio debe ser mayor que cero.
+2026-11-19 09:57:26 | INFO | Intento de creación de servicio finalizado (Código=S004).
+2026-11-19 09:57:26 | ERROR | [SERVICIO FALLIDO] Código=S005 -> DatosInvalidosError: Modalidad inválida. Use 'VIRTUAL' o 'PRESENCIAL'.
+2026-11-19 09:57:26 | INFO | Intento de creación de servicio finalizado (Código=S005).
+2026-11-19 09:57:26 | INFO | [RESERVA EXITOSA] Reserva [R001] | Estado: PROCESADA | Cliente: Laura Gómez | Servicio: Sala Ejecutiva Norte | Duración: 3.0h | Costo: $303,450.00
+2026-11-19 09:57:26 | INFO | Flujo de reserva finalizado (ID=R001).
+2026-11-19 09:57:26 | INFO | [RESERVA EXITOSA] Reserva [R002] | Estado: CONFIRMADA | Cliente: Carlos Pérez | Servicio: Kit Portátiles Desarrollo | Duración: 4.0h | Costo: $449,820.00
+2026-11-19 09:57:26 | INFO | Flujo de reserva finalizado (ID=R002).
+2026-11-19 09:57:26 | ERROR | [RESERVA FALLIDA] ID=R003 -> ReservaInvalidaError: No fue posible inicializar la reserva 'R003'. | Causa original: ServicioNoDisponibleError: El servicio 'Arquitectura Cloud' no está disponible para reservar.
+2026-11-19 09:57:26 | INFO | Flujo de reserva finalizado (ID=R003).
+2026-11-19 09:57:26 | ERROR | [RESERVA FALLIDA] ID=R004 -> OperacionNoPermitidaError: No se puede confirmar una reserva cancelada.
+2026-11-19 09:57:26 | INFO | Flujo de reserva finalizado (ID=R004).
+2026-11-19 09:57:26 | INFO | === RESUMEN FINAL EN MEMORIA ===
+2026-11-19 09:57:26 | INFO | Total clientes válidos: 2
+2026-11-19 09:57:26 | INFO | Total servicios válidos: 3
+2026-11-19 09:57:26 | INFO | Total reservas registradas: 2
+2026-11-19 09:57:26 | INFO | === FIN DE SIMULACIÓN SIN INTERRUPCIONES ===
